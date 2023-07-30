@@ -1,0 +1,38 @@
+{
+  "name": "@baicie/design-core",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/demo/demo.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baicie/ui.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "keywords": [
+    "ui",
+    "web components",
+    "stencil"
+  ],
+  "author": "baicie",
+  "license": "MIT",
+  "dependencies": {
+    "@stencil/core": "^4.0.2"
+  }
+}
