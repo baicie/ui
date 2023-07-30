@@ -9,18 +9,23 @@
     "stencil-test": "stencil test --spec --e2e",
     "stencil-test.watch": "stencil test --spec --e2e --watchAll",
     "stencil-generate": "stencil generate",
-    "cz": "cz"
+    "cz": "cz",
+    "docs-dev": "dumi dev",
+    "docs-build": "dumi build",
+    "docs-prepare": "husky install && dumi setup"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@ant-design/icons": "^5.1.4",
     "@stencil/core": "^4.0.2",
     "@stencil/sass": "^3.0.5",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
+    "dumi": "^2.2.4",
     "jest": "^29.6.2",
     "jest-cli": "^29.6.2",
     "puppeteer": "^20.9.0"
