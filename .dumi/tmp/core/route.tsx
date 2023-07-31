@@ -11,8 +11,8 @@ export async function getRoutes() {
 '404': React.lazy(() => import(/* webpackChunkName: "dumi__pages__404" */'@/dumi__pages/404')),
 'dumi-context-layout': React.lazy(() => import(/* webpackChunkName: "dumi__theme__ContextWrapper" */'@/dumi__theme/ContextWrapper')),
 'DocLayout': React.lazy(() => import(/* webpackChunkName: "dumi__theme__layouts__DocLayout" */'@/dumi__theme/layouts/DocLayout')),
-'docs/guide': React.lazy(() => import(/* webpackChunkName: "docs__guide.md" */'D:/weige/github/ui/docs/guide.md')),
-'docs/index': React.lazy(() => import(/* webpackChunkName: "docs__index.md" */'D:/weige/github/ui/docs/index.md')),
+'docs/guide': React.lazy(() => import(/* webpackChunkName: "docs__guide.md" */'D:/lzw/git-code/ui/docs/guide.md')),
+'docs/index': React.lazy(() => import(/* webpackChunkName: "docs__index.md" */'D:/lzw/git-code/ui/docs/index.md')),
 'demo-render': React.lazy(() => import(/* webpackChunkName: "dumi__pages__Demo" */'@/dumi__pages/Demo')),
 },
   };

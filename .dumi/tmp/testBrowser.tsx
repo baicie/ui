@@ -3,14 +3,14 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useEffect, useState } from 'react';
 import { ApplyPluginsType } from 'umi';
-import { renderClient, RenderClientOpts } from 'D:/weige/github/ui/node_modules/.pnpm/@umijs+renderer-react@4.0.73_react-dom@18.1.0_react@18.1.0/node_modules/@umijs/renderer-react';
+import { renderClient, RenderClientOpts } from 'D:/lzw/git-code/ui/node_modules/.pnpm/@umijs+renderer-react@4.0.73_react-dom@18.1.0_react@18.1.0/node_modules/@umijs/renderer-react';
 import { createHistory } from './core/history';
 import { createPluginManager } from './core/plugin';
 import { getRoutes } from './core/route';
 import type { Location } from 'history';
 
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
-import { setPluginManager as setDumiPluginManager } from 'D:/weige/github/ui/node_modules/.pnpm/dumi@2.2.4_@babel+core@7.22.9_@types+node@20.4.5_eslint@8.46.0_jest@29.6.2_postcss@8.4.27_pre_okqrp62plagpwnt3ldsv5le5wm/node_modules/dumi/dist/client/theme-api/utils.js';
+import { setPluginManager as setDumiPluginManager } from 'D:/lzw/git-code/ui/node_modules/.pnpm/dumi@2.2.4_@babel+core@7.22.9_@types+node@20.4.5_eslint@8.46.0_jest@29.6.2_postcss@8.4.27_pre_okqrp62plagpwnt3ldsv5le5wm/node_modules/dumi/dist/client/theme-api/utils.js';
 const publicPath = '/';
 const runtimePublicPath = false;
 
