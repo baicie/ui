@@ -1,6 +1,6 @@
 {
-  "name": "@baicie/design-core/hydrate",
-  "description": "Baicie component hydration app.",
+  "name": "@baicie/ui-core/hydrate",
+  "description": "baccie component hydration app.",
   "main": "index.js",
   "types": "index.d.ts"
 }

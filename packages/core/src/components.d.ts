@@ -6,29 +6,29 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface BcDemo {
+    interface BaicieButton {
     }
     interface MyComponent {
         /**
           * The first name
          */
-        "first"?: string;
+        "first": string;
         /**
           * The last name
          */
-        "last"?: string;
+        "last": string;
         /**
           * The middle name
          */
-        "middle"?: string;
+        "middle": string;
     }
 }
 declare global {
-    interface HTMLBcDemoElement extends Components.BcDemo, HTMLStencilElement {
+    interface HTMLBaicieButtonElement extends Components.BaicieButton, HTMLStencilElement {
     }
-    var HTMLBcDemoElement: {
-        prototype: HTMLBcDemoElement;
-        new (): HTMLBcDemoElement;
+    var HTMLBaicieButtonElement: {
+        prototype: HTMLBaicieButtonElement;
+        new (): HTMLBaicieButtonElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -37,12 +37,12 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "bc-demo": HTMLBcDemoElement;
+        "baicie-button": HTMLBaicieButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface BcDemo {
+    interface BaicieButton {
     }
     interface MyComponent {
         /**
@@ -59,7 +59,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "bc-demo": BcDemo;
+        "baicie-button": BaicieButton;
         "my-component": MyComponent;
     }
 }
@@ -67,7 +67,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "bc-demo": LocalJSX.BcDemo & JSXBase.HTMLAttributes<HTMLBcDemoElement>;
+            "baicie-button": LocalJSX.BaicieButton & JSXBase.HTMLAttributes<HTMLBaicieButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

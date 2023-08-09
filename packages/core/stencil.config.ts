@@ -1,20 +1,20 @@
 import { Config } from '@stencil/core';
+import { stencilCachePath ,stencilWWWPath} from '../../scripts/paths';
 import { sass } from '@stencil/sass';
+
 export const config: Config = {
   autoprefixCss: true,
   sourceMap: false,
-  namespace: 'Baicie',
-  bundles:[
-
-  ],
+  namespace: 'baccie',
+  cacheDir:stencilCachePath,
   plugins: [
     sass(),
   ],
+  buildEs5: 'prod',
   outputTargets: [
     {
       type: 'docs-vscode',
       file: 'dist/html.html-data.json',
-      sourceCodeBaseUrl: 'https://github.com/ionic-team/ionic/tree/main/core/',
     },
     {
       type: 'dist',
@@ -22,35 +22,30 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      // dir: 'components',
+      dir: 'components',
       // copy: [{
       //   src: '../scripts/custom-elements',
       //   dest: 'components',
       //   warn: true
       // }],
-      // includeGlobalScripts: false
+      includeGlobalScripts: false
     },
     {
-      type: 'docs-json',
-      file: '../docs/core.json'
+      type: 'docs-readme',
+      // file: '../docs/core.json'
     },
     {
       type: 'dist-hydrate-script'
     },
-    // apiSpecGenerator({
-    //   file: 'api.txt'
-    // }) as any,
-
-  ],
-  buildEs5: 'prod',
-  testing: {
-    moduleNameMapper: {
-      "@utils/test": ["<rootDir>/src/utils/test/utils"],
-      "@utils/logging": ["<rootDir>/src/utils/logging"],
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+      dir:stencilWWWPath
     },
+  ],
+  testing: {
+    browserHeadless: "new",
   },
-  preamble: '(C) Ionic http://ionicframework.com - MIT License',
-  // globalScript: 'src/global/ionic-global.ts',
   enableCache: true,
   transformAliasedImportPaths: true,
 };

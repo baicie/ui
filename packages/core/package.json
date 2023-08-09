@@ -1,7 +1,7 @@
 {
-  "name": "@baicie/design-core",
-  "version": "0.1.0",
-  "description": "",
+  "name": "@baicie/ui-core",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -9,13 +9,15 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/demo/demo.esm.js",
+  "unpkg": "dist/baccie/baccie.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/baicie/ui.git"
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
   },
   "files": [
+    "components/",
     "dist/",
+    "hydrate/",
     "loader/"
   ],
   "scripts": {
@@ -25,14 +27,15 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
-  "keywords": [
-    "ui",
-    "web components",
-    "stencil"
-  ],
-  "author": "baicie",
-  "license": "MIT",
   "dependencies": {
-    "@stencil/core": "^4.0.2"
-  }
+    "@stencil/core": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.9",
+    "jest": "^29.6.2",
+    "jest-cli": "^29.6.2",
+    "puppeteer": "^21.0.2"
+  },
+  "license": "MIT"
 }

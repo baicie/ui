@@ -1,16 +1,16 @@
 {
-  "timestamp": "2023-07-30T14:51:48",
+  "timestamp": "2023-08-09T15:45:52",
   "compiler": {
     "name": "@stencil/core",
-    "version": "4.0.2",
+    "version": "4.0.4",
     "typescriptVersion": "5.0.4"
   },
   "components": [
     {
-      "filePath": "src/components/bc-demo/bc-demo.tsx",
+      "filePath": "src/components/button/button.tsx",
       "encapsulation": "shadow",
-      "tag": "bc-demo",
-      "readme": "# bc-demo\n\n\n",
+      "tag": "baicie-button",
+      "readme": "# baicie-button\n\n\n",
       "docs": "",
       "docsTags": [],
       "usage": {},
@@ -36,10 +36,10 @@
       "props": [
         {
           "name": "first",
-          "type": "string | undefined",
+          "type": "string",
           "complexType": {
             "original": "string",
-            "resolved": "string | undefined",
+            "resolved": "string",
             "references": {}
           },
           "mutable": false,
@@ -50,20 +50,17 @@
           "values": [
             {
               "type": "string"
-            },
-            {
-              "type": "undefined"
             }
           ],
-          "optional": true,
+          "optional": false,
           "required": false
         },
         {
           "name": "last",
-          "type": "string | undefined",
+          "type": "string",
           "complexType": {
             "original": "string",
-            "resolved": "string | undefined",
+            "resolved": "string",
             "references": {}
           },
           "mutable": false,
@@ -74,20 +71,17 @@
           "values": [
             {
               "type": "string"
-            },
-            {
-              "type": "undefined"
             }
           ],
-          "optional": true,
+          "optional": false,
           "required": false
         },
         {
           "name": "middle",
-          "type": "string | undefined",
+          "type": "string",
           "complexType": {
             "original": "string",
-            "resolved": "string | undefined",
+            "resolved": "string",
             "references": {}
           },
           "mutable": false,
@@ -98,12 +92,9 @@
           "values": [
             {
               "type": "string"
-            },
-            {
-              "type": "undefined"
             }
           ],
-          "optional": true,
+          "optional": false,
           "required": false
         }
       ],
