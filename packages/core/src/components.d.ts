@@ -7,6 +7,10 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface BaicieButton {
+        /**
+          * 是否禁用 If `true`, the user cannot interact with the button.
+         */
+        "disabled": boolean;
     }
     interface MyComponent {
         /**
@@ -43,6 +47,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface BaicieButton {
+        /**
+          * 是否禁用 If `true`, the user cannot interact with the button.
+         */
+        "disabled"?: boolean;
     }
     interface MyComponent {
         /**
