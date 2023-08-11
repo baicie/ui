@@ -9,15 +9,15 @@ pnpm update-version
 pnpm build
 
 cd packages/core
-npm publish --access public
+pnpm publish --access public
 cd -
 
 cd packages/docs
-npm publish --access public
+pnpm publish --access public
 cd -
 
 cd packages/vue
-npm publish --access public
+pnpm publish --access public
 cd -
 
 echo "✅ Publish completed"
