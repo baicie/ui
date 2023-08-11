@@ -29,6 +29,9 @@ jobs:
       - name: Gen npmrc
         run: echo "//registry.npmjs.com/:_authToken=${{ secrets.NPM_PUBLISH_TOKEN }}" >> ./.npmrc
 
+      - name: WhoAmI
+        run: npm whoami
+
       - name: Build&publish
         run: sh ./scripts/publish.sh
         env:
